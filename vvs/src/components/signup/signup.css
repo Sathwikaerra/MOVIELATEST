@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,400;0,600;0,700;0,800;0,900;1,100;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+.form{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    background: #00416A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    height: 60vh;
+    border: 2px solid black;
+    border-radius: 100px;
+    gap: 10px;
+}
+
+.loginpage{
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+
+    
+   background: #780206;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #061161, #780206); 
+    
+}
+
+.form label{
+    color:black;
+}
+
+.form input{
+    width: 300px;
+    height: 40px;
+}
+
+.link{
+    text-decoration: none;
+    
+}
+.login{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}

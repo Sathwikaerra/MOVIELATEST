@@ -1,0 +1,29 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+  background: #E6DADA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #274046, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #274046, #E6DADA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    height: 60vh;
+    border: 2px solid black;
+    border-radius: 100px;
+}
+
+.link{
+    text-decoration: none;
+}
+.loginpage{
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+
+    
+   background: #780206;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #061161, #780206); 
+    
+}
