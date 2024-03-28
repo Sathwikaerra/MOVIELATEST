@@ -13,7 +13,7 @@ const Signup = () => {
 
     const Handle=(e)=>{
         e.preventDefault();
-        axios.post(`http://127.0.0.1:8000/signup`,{email,password}).then((res)=>{
+        axios.post('https://movielatest-6.onrender.com/signup',{email,password}).then((res)=>{
             console.log(res)
         navigate('/login')
     

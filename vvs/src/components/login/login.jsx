@@ -12,7 +12,7 @@ const Login = () => {
 
     const Handle=(e)=>{
         e.preventDefault();
-         axios.post(`http://127.0.0.1:8000/login`,{email,password}).then(res=>{
+         axios.post('https://movielatest-6.onrender.com/login',{email,password}).then(res=>{
           if(res.data=='success')
           {
        
@@ -24,7 +24,7 @@ const Login = () => {
           }
      
          }).catch(err=>{
-          console.log('error in axios')
+          console.log(err)
          })
         
 
