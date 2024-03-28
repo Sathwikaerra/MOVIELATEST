@@ -5,10 +5,13 @@ const jwt =require('jsonwebtoken')
 const dotenv=require('dotenv')
 dotenv.config()
 const bcrypt=require('bcrypt');
+const upMoviesData=require('../upcmngmovies')
 
 
 
-
+router.get('/movies',async(req,res)=>{
+    res.send(upMoviesData)
+})
 
 router.post('/signup',async(req,res)=>{
     const {email,password,confirmPassword}=req.body
