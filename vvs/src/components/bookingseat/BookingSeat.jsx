@@ -15,8 +15,8 @@ const BookingSeat = ({date,tickets,addTicket,addDate}) => {
 
     const [x,setX]=useState();
 
-    const inActiveBtn='btn btn-outline-warning m-2';
-    const activeBtn='btn btn-outline-success  m-2 active';
+    const inActiveBtn='btnbook  btn btn-outline-warning m-2';
+    const activeBtn='btnbook btn btn-outline-success  m-2 active';
 
     const navigate=useNavigate();
 
@@ -66,35 +66,33 @@ const BookingSeat = ({date,tickets,addTicket,addDate}) => {
         <div className="dates">
             <div className="leftdays">
             <div className="days">
-                <ul><li   className='li'>Sunday</li><li onClick={()=>addDate("sunday",1)}  >1</li><li onClick={()=>addDate("sunday",15)}>15</li><li onClick={()=>addDate("sunday",29)}>29</li></ul>
-                <ul><li  className='li'>Monday</li><li onClick={()=>addDate("Monday",2)}>2</li><li onClick={()=>addDate("Monday",16)}>16</li><li onClick={()=>addDate("Monday",30)}>30</li></ul>
-                <ul><li  className='li'>Tuesday</li><li onClick={()=>addDate("Tuesday",3)}>3</li><li onClick={()=>addDate("Tuesday",17)}>17</li><li onClick={()=>addDate("Tuesday",31)}>31</li></ul>
-                <ul><li  className='li'>Wednesday</li><li onClick={()=>addDate("Wednesday",4)}>4</li><li onClick={()=>addDate("Wednesday",18)}>18</li></ul>
-                <ul><li  className='li'>Thursday</li><li onClick={()=>addDate("Thursday",5)}>5</li><li onClick={()=>addDate("Thursday",19)}>19</li></ul>
-                <ul><li className='li'>Friday</li><li onClick={()=>addDate("Friday",6)}>6</li><li onClick={()=>addDate("Friday",20)} >20</li></ul>
-                <ul><li   className='li'>Saturday</li><li onClick={()=>addDate("Saturday",7)}>7</li><li onClick={()=>addDate("Saturday",21)}>21</li></ul>
+                <ul><li   className='li'>Sunday</li><li onClick={()=>addDate("sunday",1)}  >1</li><li onClick={()=>addDate("sunday",8)}>8</li><li onClick={()=>addDate("sunday",15)}>15</li> <li onClick={()=>addDate("sunday",22)}>22</li><li onClick={()=>addDate("sunday",29)}>29</li></ul>
+                <ul><li  className='li'>Monday</li><li onClick={()=>addDate("Monday",2)}>2</li><li onClick={()=>addDate("Monday",9)}>9</li><li onClick={()=>addDate("Monday",16)}>16</li><li onClick={()=>addDate("Monday",23)}>23</li><li onClick={()=>addDate("Monday",30)}>30</li></ul>
+                <ul><li  className='li'>Tuesday</li><li onClick={()=>addDate("Tuesday",3)}>3</li><li onClick={()=>addDate("Tuesday",10)}>10</li><li onClick={()=>addDate("Tuesday",17)}>17</li><li onClick={()=>addDate("Tuesday",24)}>24</li><li onClick={()=>addDate("Tuesday",31)}>31</li></ul>
+                <ul><li  className='li'>Wednesday</li><li onClick={()=>addDate("Wednesday",4)}>4</li><li onClick={()=>addDate("Wednesday",11)}>11</li><li onClick={()=>addDate("Wednesday",18)}>18</li><li onClick={()=>addDate("Wednesday",25)}>25</li></ul>
+                <ul><li  className='li'>Thursday</li><li onClick={()=>addDate("Thursday",5)}>5</li> <li onClick={()=>addDate("Thursday",12)}>12</li><li onClick={()=>addDate("Thursday",19)}>19</li>
+               <li onClick={()=>addDate("Thursday",26)}>26</li></ul>
+                <ul><li className='li'>Friday</li><li onClick={()=>addDate("Friday",6)}>6</li><li onClick={()=>addDate("Friday",13)}>13</li><li onClick={()=>addDate("Friday",20)} >20</li>  <li onClick={()=>addDate("Friday",27)}>27</li></ul>
+                <ul><li   className='li'>Saturday</li><li onClick={()=>addDate("Saturday",7)}>7</li><li onClick={()=>addDate("Saturday",14)}>14</li><li onClick={()=>addDate("Saturday",21)}>21</li>    <li onClick={()=>addDate("Saturday",28)}>28</li></ul>
 
             </div>
             
             </div>
 
-            <div className="rightdays">
             
-            <div className="days">
-                <ul><li className='li'>Sunday</li><li onClick={()=>addDate("sunday",8)}>8</li><li onClick={()=>addDate("sunday",22)}>22</li><li>-</li></ul>
-                <ul><li className='li'>Monday</li><li onClick={()=>addDate("Monday",9)}>9</li><li onClick={()=>addDate("Monday",23)}>23</li><li>-</li></ul>
-                <ul><li className='li'>Tuesday</li><li onClick={()=>addDate("Tuesday",10)}>10</li><li onClick={()=>addDate("Tuesday",24)}>24</li><li>-</li></ul>
-                <ul><li className='li'>Wednesday</li><li onClick={()=>addDate("Wednesday",11)}>11</li><li onClick={()=>addDate("Wednesday",25)}>25</li><li>-</li></ul>
-                <ul><li className='li'>Thursday</li><li onClick={()=>addDate("Thursday",12)}>12</li><li onClick={()=>addDate("Thursday",26)}>26</li><li>-</li></ul>
-                <ul><li className='li'>Friday</li><li onClick={()=>addDate("Friday",13)}>13</li><li onClick={()=>addDate("Friday",27)}>27</li><li>-</li></ul>
-                <ul><li className='li'>Saturday</li><li onClick={()=>addDate("Saturday",14)}>14</li><li onClick={()=>addDate("Saturday",28)}>28</li><li>-</li></ul>
+               
+                
+                
 
-            </div>
+              
+            
+
+        
         
 
 
 
-            </div>
+            
            
         </div>
         <div className="screen">

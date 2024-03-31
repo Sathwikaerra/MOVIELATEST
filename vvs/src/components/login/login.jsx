@@ -19,12 +19,14 @@ const Login = () => {
             navigate(`/home/${email}`)
           }
           else{
-            console.log(res.data)
+          
+            document.querySelectorAll('output').innerHtml='waste'
 
           }
      
          }).catch(err=>{
           console.log(err)
+        
          })
         
 
@@ -59,8 +61,14 @@ const Login = () => {
         
         <div><button type='submit' className='btn btn-success '>Login</button></div>
 
-        <div>
-            <p>Already  have an acccount ?<a className='link' href="/signup"><span className='text-black'>Signup here</span></a></p>
+        <div className='output text-primary'>
+          wasted....
+
+        </div>
+
+        <div className='btm'> 
+            <p className='lll text-black'>Already  have an acccount ?</p>
+            <a className='link' href="/signup"><span className='lll'>Signup here</span></a>
         </div>
         
 

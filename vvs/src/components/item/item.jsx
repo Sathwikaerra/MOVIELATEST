@@ -12,9 +12,9 @@ const Item = (props) => {
 
   return (
     <div className='item'  >
-      <Link to={`/home/${props.user}/${props.id}`}>
-      <div><img src={props.image} alt="" /></div>
-      </Link>   
+      <div><Link to={`/home/${props.user}/${props.id}`}>
+      <img src={props.image} alt="" />
+      </Link>   </div>
       
       <div className="title">{props.name}</div>
        

@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     flex-direction: column;
    background: #780206;  /* fallback for old browsers */
    background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
@@ -47,7 +48,7 @@
     align-items: center;
     gap: 30px;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: c;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -74,3 +75,60 @@ span{
 a:hover{
     text-decoration: none;
 }
+
+
+@media (max-width: 1289px) {
+ h1{
+    font-size: 26px;
+ }
+    span{
+font-size: 12px;
+    }
+
+    a{
+font-size: 16px;
+    }
+
+    hr{
+        width: 300px;
+        height: 4px;
+    }
+}
+
+
+@media (max-width: 520px) {
+    h1{
+       font-size: 20px;
+    }
+       span{
+   font-size: 10px;
+       }
+   
+       a{
+   font-size: 11px;
+       }
+   
+       hr{
+           width: 100px;
+           height: 3px;
+       }
+   }
+
+   
+@media (max-width: 431px) {
+    h1{
+       font-size: 14px;
+    }
+       span{
+   font-size: 8px;
+       }
+   
+       a{
+   font-size: 9px;
+       }
+   
+       hr{
+           width: 80px;
+           height: 3px;
+       }
+   }

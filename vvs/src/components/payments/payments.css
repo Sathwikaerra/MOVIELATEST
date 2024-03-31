@@ -32,49 +32,9 @@
     border-radius: 100%;
 }
 
-.ticket .left{
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
 
-}
-.ticket .right{
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
 
-}
 
-.ticket .left .ticketNO{
-    width: 100%;
-    height: 300px;
-    border-radius: 0;
-    gap: 40px;
-    padding: 10px 30px;
-    
-    display: flex;
-    
-    align-items: start;
-    border: 2px solid black;
-    
-    background: rgb(213, 213, 211);
-}
-
-.ticket .right .ticketNO{
-    width: 100%;
-    height: 300px;
-    border-radius: 0;
-    gap: 40px;
-    padding: 10px 30px;
-    
-    display: flex;
-    
-    align-items:center;
-    
-    background: rgb(213, 213, 211);
-}
 
 .ticket .details{
     display: flex;
@@ -106,6 +66,7 @@
     gap: 50px;
     width: 100%;
     height: fit-content;
+    flex-wrap: wrap;
     background: rgb(33, 31, 31);
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     
@@ -131,4 +92,238 @@
     gap: 10px;
 }
 
+
+@media (max-width:1024px) {
+
+    
+.logo{
+    padding: 0 20px;
+    gap: 1px;
+}
+.seatNo{
+    gap: 9px;
+}
+.ticket .paymentdetails{
+    font-size: 12px;
+    font-weight: 800;
+   
+
+}
+.ticket{
+    gap: 30px;
+
+}
+.ticket img{
+    height: 150px;
+}
+.ticket .details{
+    
+    font-size: 12px;
+    font-weight: 800;
+
+}
+.logo .main-image{
+
+    width: 30px;
+    height: 40px;
+    border-radius: 100%;
+    margin-top: 16px;
+}
+.paymentmain{
+   
+    padding: 23px 50px;
+  
+}
+
+}
+
+@media (max-width:1289px) {
+
+    
+    .logo{
+        padding: 0 20px;
+        gap: 1px;
+    }
+    .seatNo{
+        gap: 10px;
+    }
+    .ticket .paymentdetails{
+        font-size: 14px;
+        font-weight: 800;
+       
+    
+    }
+    .ticket{
+        gap: 40px;
+    
+    }
+    .ticket img{
+        height: 200px;
+    }
+    .ticket .details{
+        
+        font-size: 14px;
+        font-weight: 800;
+    
+    }
+    .logo .main-image{
+    
+        width: 40px;
+        height: 50px;
+        border-radius: 100%;
+        margin-top: 20px;
+    }
+    .paymentmain{
+       
+        padding: 30px 60px;
+      
+    }
+    
+    }
+
+
+    
+@media (max-width:800px) {
+
+    
+    .logo{
+        padding: 0 14px;
+        gap: 1px;
+    }
+    .seatNo{
+        gap: 6px;
+    }
+    .ticket .paymentdetails{
+        font-size: 12px;
+        font-weight: 800;
+       
+    
+    }
+    .ticket{
+        gap: 20px;
+    
+    }
+    .ticket img{
+        height: 180px;
+    }
+    .ticket .details{
+        
+        font-size: 14px;
+        font-weight: 800;
+    
+    }
+    .logo .main-image{
+    
+        width: 49px;
+        height: 40px;
+        border-radius: 100%;
+        margin-top: 20px;
+    }
+    .paymentmain{
+       
+        padding: 30px 60px;
+      
+    }
+    
+    }
+    
+    
+@media (max-width:620px) {
+
+    
+    .logo{
+        padding: 0 14px;
+        gap: 1px;
+    }
+    .seatNo{
+        gap: 6px;
+    }
+    .ticket .paymentdetails{
+        font-size: 12px;
+        font-weight: 800;
+       
+    
+    }
+    .ticket{
+    
+margin: 2px 30px;
+    
+    }
+    .ticket img{
+        height: 180px;
+    }
+    .ticket .details{
+        
+        font-size: 14px;
+        font-weight: 800;
+    
+    }
+    .logo .main-image{
+    
+        width: 49px;
+        height: 40px;
+        border-radius: 100%;
+        margin-top: 20px;
+    }
+    .paymentmain{
+       
+        padding: 30px 2px;
+      
+    }
+    
+    }
+    
+    
+
+
+    
+@media (max-width:436px) {
+
+    
+    .logo{
+        padding: 0 14px;
+        gap: 1px;
+    }
+    .seatNo{
+        gap: 6px;
+    }
+    .ticket .paymentdetails{
+        font-size: 8px;
+        font-weight: 800;
+       
+    
+    }
+    .ticket{
+    
+margin: 2px 20px;
+    
+padding: 0;
+    }
+    .ticket img{
+        height: 60px;
+    }
+    .ticket .details{
+        
+        font-size: 12px;
+        font-weight: 800;
+    
+    }
+    .logo .main-image{
+    
+        width: 29px;
+        height: 30px;
+        border-radius: 100%;
+        margin-top: 14px;
+    }
+    .paymentmain{
+       
+        padding: 0;
+    
+      
+    }
+  
+    
+    }
+    
+    
 

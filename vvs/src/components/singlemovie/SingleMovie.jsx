@@ -28,22 +28,22 @@ const SingleMovie = ({addTicket}) => {
 
 
   return (
-    <div className='singlepage  '>
+    <div className='singlepage'>
         {
             data.map((item)=>{
                 return (
                     <div className="main">
                         <div className="left">
-                            <img  src={item.image}alt="" />
+                            <img className='prabhasimg' src={item.image}alt="" />
                             
                         </div>
                         <div className="right">
-                        <p><img src={star} alt="" /><img src={star} alt="" /><img src={star} alt="" /><img src={star} alt="" /><img src={star} alt="" />(122)</p>
-                            <div className=''><p className='p' >Name:<span>{item.name}</span></p></div>
-                            <div className=''><p className='p'>DIRECTED BY:<span>{item.director}</span></p></div>
-                            <div className=''><p className='p'>Lead Actors:<span>{item.actors}</span></p></div>
-                            <div className=''><p className='p'>Movie:<span>{item.description}</span></p></div>
-                            <button  className='' onClick={()=>bookticket(item.id)}>Book your ticket</button>
+                        <p className='white'><img src={star} alt="" /><img src={star} alt="" /><img src={star} alt="" /><img src={star} alt="" /><img src={star} alt="" />(122)</p>
+                            <div className=''><p className='black' >Name:<span className='white'>{item.name}</span></p></div>
+                            <div className=''><p className='black'>DIRECTED BY:<span className='white'>{item.director}</span></p></div>
+                            <div className=''><p className='black'>Lead Actors:<span className='white'>{item.actors}</span></p></div>
+                            <div className=''><p className='black'>Movie:<span className='white'>{item.description}</span></p></div>
+                            <button  className='btn bg-primary' onClick={()=>bookticket(item.id)}>Book your ticket</button>
                         </div>
                     </div>
                 )

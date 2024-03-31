@@ -3,44 +3,18 @@
 
 
 .bookingmain{
-   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
    background: #780206;  /* fallback for old browsers */
    background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
    background: linear-gradient(to right, #061161, #780206); 
+   padding-bottom: 20px;
    
 }
 
 
-
-.left{
-   flex: 1;
-   
-    
-    
-
-    flex-wrap: wrap;
-}
- .left button{
-    background: rgb(72, 70, 70);
-    color: antiquewhite;
-    width: 90px;
-    padding: 10px 20px;
-    height: 50px;
-    font-size: 10px;
- 
-
-
-
- }
- .left button:hover{
-    background-color: rgb(62, 235, 120);
-    color: black;
-    transition: 0.3s;
- }
- .left .seat:active{
-    background: rgb(211, 21, 56);
-    color: rgb(238, 235, 235);
- }
 
  .bookingseat{
    display: flex;
@@ -94,20 +68,6 @@
  
 
 
-.right{
-   display: flex;
-   gap: 20px;
-}
-
-.right .button{
-   background: brown;
-   color: antiquewhite;
-   width: 90px;
-   padding: 10px 20px;
-   height: 50px;
-   font-size: 10px;
-
-}
 
 .details{
    display: flex;
@@ -134,8 +94,10 @@
 .dates{
    display: flex;
    justify-content: center;
-   gap: 50px;
+   width: 100%;
+   flex-wrap: wrap;
    margin-top: 30px;
+   align-items: center;
 
 }
 
@@ -143,38 +105,33 @@
    display: flex;
    justify-content: center;
    flex-direction: column;
+   align-items: center;
+   flex-wrap: wrap;
    list-style: none;
+   width: 80%;
+   outline: none;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    background:linear-gradient(rgb(234, 17, 53),rgb(75, 35, 35));
 
 }
 
-.dates .rightdays{
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   list-style: none;
-   background:linear-gradient(rgb(234, 17, 53),rgb(75, 35, 35));
-}
+
 
 
 
 .dates .leftdays .days{
    display: flex;
-   gap: 6px;
+   flex-wrap: wrap;
 
 }
 
 
-.dates .rightdays .days{
-   display: flex;
-
-}
 
 .days ul{
    list-style: none;
    display: flex;
    flex-direction: column;
-   row-gap: 6px;
+   row-gap: 4px;
  
   
 }
@@ -215,16 +172,380 @@
 }
 
 .btn4:hover{
-   background: rgb(5, 50, 63);
-   color: blue;
+   background: rgb(232, 234, 235);
+   color: rgb(52, 19, 46);
 }
 
 
-.bookingseat{
+@media (max-width:1289px) {
 
-   background: #780206;  /* fallback for old browsers */
-   background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to right, #061161, #780206); 
-   padding-bottom: 50px;
+.middle{
+   gap: 20px;
+}
+.btn4{
+   
+   font-size: 18px;
+   width: 400px;
+   padding: 10px 20px;
+}
+.days ul .li{
+  
+   font-size: 13px;
+   font-weight: 700;
+   }
+
+.dates .leftdays .days{
+
+   font-size: 16px;
+
 
 }
+
+.screen{
+  
+   margin: 10px 30px;
+   font-size: 20px;
+   font-weight: 900;
+
+ }
+.dates{
+   gap: 50px;
+   margin-top: 40px;
+
+ 
+
+}
+.dates .leftdays{
+   padding: 10px 30px;
+}
+.middle button{
+   width: 80px;
+   padding: 9px 18px;
+   height: 45px;
+   font-size: 9px;
+
+   
+
+}
+ 
+
+
+
+.details{
+ 
+   gap: 30px;
+   
+}
+
+.details span{
+   padding: 5px 15px;
+   border-radius: 20px;
+}
+
+   
+}
+
+
+@media (max-width:1024px) {
+
+   .middle{
+      gap: 5px;
+   }
+   .btn4{
+      
+      font-size: 12px;
+      width: 300px;
+      padding: 8px 16px;
+   }
+   .days ul .li{
+     
+      font-size: 11px;
+      font-weight: 700;
+      }
+   
+   .dates .leftdays .days{
+   
+      font-size: 13px;
+   
+   
+   }
+   
+   .screen{
+     
+      margin: 8px 24px;
+      font-size: 16px;
+      font-weight: 900;
+   
+    }
+   .dates{
+      gap: 40px;
+      
+   
+    
+   
+   }
+   .dates .leftdays{
+      padding: 8px 23px;
+   }
+   .middle button{
+      width: 70px;
+      padding: 7px 16px;
+      height: 40px;
+      font-size: 8px;
+   
+      
+   
+   }
+    
+   
+   
+   
+   .details{
+    
+      gap: 20px;
+      
+   }
+   
+   .details span{
+      padding:4px 12px;
+      border-radius: 16px;
+   }
+
+   .seats{
+      margin: 15px 50px;
+      padding: 50px 40px;
+   }
+   
+      
+   }
+
+
+   
+@media (max-width:800px) {
+
+   .middle{
+      gap: 5px;
+   }
+   .btn4{
+      
+      font-size: 12px;
+      width: 260px;
+      padding: 7px 13px;
+   }
+   .days ul .li{
+     
+      font-size: 11px;
+      font-weight: 700;
+      }
+   
+   .dates .leftdays .days{
+   
+      font-size: 13px;
+   
+   
+   }
+   .dates .leftdays{
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+   
+   .screen{
+     
+      margin: 8px 24px;
+      font-size: 16px;
+      font-weight: 900;
+   
+    }
+   .dates{
+      gap: 40px;
+      
+   
+    
+   
+   }
+   .dates .leftdays{
+      padding: 8px 23px;
+   }
+   .middle button{
+      width: 70px;
+      padding: 7px 16px;
+      height: 40px;
+      font-size: 8px;
+   
+      
+   
+   }
+    
+   
+   
+   
+   .details{
+    
+      gap: 20px;
+      
+   }
+   
+   .details span{
+      padding:4px 12px;
+      border-radius: 16px;
+   }
+
+   .seats{
+      margin: 15px 50px;
+      padding: 50px 40px;
+   }
+   
+      
+   }
+
+
+
+   
+   
+@media (max-width:500px) {
+
+   .middle{
+      gap: 4px;
+   }
+   .btn4{
+      
+      font-size: 8px;
+      width: 140px;
+      padding: 3px 8px;
+   }
+   .days ul .li{
+     
+      font-size: 9px;
+      font-weight: 600;
+      }
+   
+   .dates .leftdays .days{
+   
+      font-size: 9px;
+   
+   
+   }
+  
+   .screen{
+     
+      margin: 4px 18px;
+      font-size: 13px;
+      font-weight: 700;
+   
+    }
+   .dates{
+      gap: 20px;
+      
+   
+    
+   
+   }
+   .dates .leftdays{
+      padding: 5px 16px;
+   }
+   .middle button{
+      width: 40px;
+      padding: 2px 7px;
+      height: 20px;
+      font-size: 7px;
+   
+      
+   
+   }
+    
+   
+   
+   
+   .details{
+    
+      gap: 10px;
+      
+   }
+   
+   .details span{
+      padding:2px 9px;
+      border-radius: 10px;
+   }
+
+   .seats{
+      margin: 10px 36px;
+      padding: 30px 20px;
+   }
+   
+      
+   }
+
+   @media (max-width:315px) {
+
+      .middle{
+         gap: 1px;
+      }
+      .btn4{
+         
+         font-size: 6px;
+         width: 100px;
+         padding: 2px 6px;
+      }
+      .days ul .li{
+        
+         font-size: 8px;
+         font-weight: 600;
+         }
+      
+      .dates .leftdays .days{
+      
+         font-size: 7px;
+      
+      
+      }
+     
+      .screen{
+         
+        
+         margin: 2px 14px;
+         font-size: 10px;
+         font-weight: 600;
+      
+       }
+      .dates{
+         gap: 10px;
+         
+      
+       
+      
+      }
+      .dates .leftdays{
+         padding: 2px 10px;
+      }
+      .middle button{
+         width: 20px;
+         padding: 1px 3px;
+         height: 10px;
+         font-size: 7px;
+      
+         
+      
+      }
+       
+      
+      
+      
+      .details{
+       
+         gap: 6px;
+         
+      }
+      
+      .details span{
+         padding:1px 6px;
+         border-radius: 8px;
+      }
+   
+      .seats{
+
+         margin: 0px 20px;
+         padding:0px 16px;
+      }
+      
+         
+      }

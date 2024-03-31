@@ -28,13 +28,13 @@ const Signup = () => {
          <form className='form d-flex  ' onSubmit={Handle}>
       
 
-        <div>
+        <div className='user'>
             <label htmlFor="">UserName:</label>
         <input type="email"  name="" onChange={(e)=>setEmail(e.target.value)} id="" />
 
         </div>
 
-        <div>
+        <div className='user'>
             <label htmlFor="">Password:</label>
         <input type="password" name="" onChange={(e)=>setPassword(e.target.value)} id="" />
 
@@ -42,8 +42,17 @@ const Signup = () => {
         
         <div><button type='submit' className='btn btn-warning'>Sign Up</button></div>
 
-        <div>
-            <p>Already  have an acccount ?<a className='link' href="/login"><span className='text-black'>Login here</span></a></p>
+        
+        <div className='output'>
+          <p>
+            
+          </p>
+
+        </div>
+
+        <div className='btm'>
+            <p className='lll text-black'>Already  have an acccount ?</p>
+            <a className='link' href="/login"><span className=' lll '>Login here</span></a>
         </div>
         
 

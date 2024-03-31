@@ -26,14 +26,14 @@ app.post('/login',(req,res)=>{
 
    if(!user)
    {
-    return res.json({msg:'user is not yet registered'})
+    return res.send('user is not yet registered')
    }
     
    const validpass=bcrypt.compare(password,user.password)
 
    if(!validpass)
    {
-    return res.json({msg:"password is incorrect"})
+    return res.send("password is incorrect")
    }
 
    return res.send('success')

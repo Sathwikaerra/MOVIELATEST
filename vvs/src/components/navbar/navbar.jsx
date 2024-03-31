@@ -18,19 +18,19 @@ const Navbar = () => {
     <div className="collapse navbar-collapse " id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0" >
         <li className="nav-item ">
-          <Link className="nav-link active text-danger" aria-current="page" to="/login">Home</Link>
+          <Link className="nav-link active   border border-danger text-warning   px-3 rounded-pill  px-3 mx-3 my-1" aria-current="page" to="/login">Home</Link>
         </li>
         
         <li className="nav-item">
-          <Link className="nav-link active text-danger" aria-current="page"to="/upcommingmovies">Upcomming  Movies</Link>
+          <Link className="nav-link active text-warning  border border-danger px-3 rounded-pill mx-3 my-1" aria-current="page"to="/upcommingmovies">Upcomming  Movies</Link>
         </li>
 
         <li className="nav-item">
-          <Link className="nav-link active text-danger" aria-current="page" to="/signup">Signup</Link>
+          <Link className="nav-link active text-warning  border border-danger px-3 rounded-pill  px-3  mx-3 my-1 " aria-current="page" to="/signup">Signup</Link>
         </li>
 
         <li className="nav-item">
-          <Link className="nav-link active text-danger" aria-current="page" to="/">Logout</Link>
+          <Link className="nav-link active text-warning  border border-danger px-3 rounded-pill  mx-3 my-1  " aria-current="page" to="/">Logout</Link>
         </li>
        
         

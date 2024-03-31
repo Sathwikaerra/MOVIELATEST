@@ -14,15 +14,29 @@
 .navbar-nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+   text-align: start;
    
     width: 80%;
-    margin: 2px 60px;
+    margin: 2px 0px;
+    text-align: start;
 }
+
+
 .img img{ 
     height: 40px;
     border-radius: 80%;
-    margin: 1px 20px;
+
+}
+
+
+@media (max-width:330px) {
+    .img img{ 
+        height: 40px;
+    }
+    
+    .navbar{
+        font-size: 15px;
+    }
 }
 
 
